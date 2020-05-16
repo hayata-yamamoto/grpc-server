@@ -1,6 +1,12 @@
 # Python gRPC server
 
 ## Usage 
+### Compile .proto 
+
+```bash 
+make compile 
+```
+
 ### Server
 
 **Local**

@@ -1,5 +1,8 @@
 default: | help
 
+compile: 
+	poetry run python src/commands/genproto.py
+
 fmt: ## format codes ## make fmt
 	poetry run yapf -r -i --style pep8 src
 
