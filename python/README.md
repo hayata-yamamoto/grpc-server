@@ -48,9 +48,3 @@ $ poetry install
 $ brew install protobuf
 $ brew install grpc
 ```
-
-After started server, 
-
-```bash 
-$ grpc_cli ls localhost:50051
-```
