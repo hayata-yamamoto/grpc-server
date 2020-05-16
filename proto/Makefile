@@ -1,4 +1,4 @@
-fmt-pb:
+fmt:
 	find . -name "*.proto" | xargs clang-format -i
 
 compile:

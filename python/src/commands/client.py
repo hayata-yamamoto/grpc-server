@@ -5,7 +5,7 @@ from src.client import *
 
 
 def main() -> None:
-    with grpc.insecure_channel('localhost:50051') as chan:
+    with grpc.insecure_channel('server:50051') as chan:
         stub = route_guide_pb2_grpc.RouteGuideStub(chan)
         print("-------------- GetFeature --------------")
         guide_get_feature(stub)

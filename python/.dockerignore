@@ -1,0 +1,6 @@
+__pycache__
+.flake8
+.python-version
+mypy.ini
+*.egg-info
+.mypy_cache

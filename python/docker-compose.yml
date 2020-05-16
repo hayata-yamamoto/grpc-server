@@ -1,0 +1,21 @@
+version: "3"
+
+services: 
+  server:
+    build: 
+      context: .
+    ports: 
+      - 50051
+    networks: 
+      - pb-tutorial
+    
+  client: 
+    build: 
+      context: .
+    command: ["src/commands/client.py"]
+    networks: 
+      - pb-tutorial
+
+networks: 
+  pb-tutorial:
+    internal: true
