@@ -24,6 +24,8 @@ docker run -it -p 50051:50051 grpc-server
 make client 
 ```
 
+**Docker**
+
 ```bash
 docker build -t grpc-server .
 docker run -it -p 50051:50051 grpc-server src/commands/client.py
@@ -38,13 +40,6 @@ $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-po
 $ poetry self update
 $ poetry config virtualenvs.in-project true
 $ poetry install
-```
-
-To start server and call it by client is the below.
-
-```bash 
-make server 
-make client 
 ```
 
 **protobuf & gPRC**
