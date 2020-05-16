@@ -1,7 +1,7 @@
-## Python gRPC server
+# Python gRPC server
 
-### Usage 
-#### Server
+## Usage 
+### Server
 
 **Local**
 
@@ -16,7 +16,7 @@ docker build -t grpc-server .
 docker run -it -p 50051:50051 grpc-server
 ```
 
-#### Client 
+### Client 
 
 **Local**
 
@@ -31,9 +31,9 @@ docker build -t grpc-server .
 docker run -it -p 50051:50051 grpc-server src/commands/client.py
 ```
 
-### Tools 
+## Tools 
 
-**poetry**
+### poetry
 
 ```bash
 $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3
@@ -42,7 +42,7 @@ $ poetry config virtualenvs.in-project true
 $ poetry install
 ```
 
-**protobuf & gPRC**
+### protobuf, gPRC
 
 ```bash
 $ brew install protobuf
